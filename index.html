@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet">
+    <link href="CSS/style.css" rel="stylesheet" type="text/CSS">
+    <title></title>
+    </head>
+    <body>
+        <div class="container-flex">
+            <div class="row">
+                <div class="headr">
+                    <div class="logo">
+                      <img src="images/brd.png"alt="">    
+                    </div>
+                    <h4>Welcome to The Pizzeria</h4>
+                    <h5 id="def">Click on the type of pizza you want from the menu below</h5>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#box0">
+                        <img id="im1" src="images/p1.jpg"alt="">
+                    </a>
+                    <h5 class="hdr">Iranian pizza</h5>
+                </div>
+                <div class="col-md-4">
+                    <a href="#box0">
+                      <img id="im2" src="images/p2.jpg"alt="">
+                    </a>
+                    <h5 class="hdr">Greek pizza</h5>
+                </div>
+                <div class="col-md-4">
+                    <a href="#box0">
+                        <img id="im3" src="images/p3.jpg"alt="">                    
+                    </a>
+                    <h5 class="hdr">Neapolitan Pizza</h5>
+                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+            <form id="boxO" class="box form-group">
+                  <hr>
+                  <div id="p1" class="fb">
+                    <h5>Pizza Name</h5>
+                    <select class="browser-default custom-select custom-select-md mb-3 name" name="">
+                        <option value="Iranian">Iranian Pizza</option>
+                        <option value="Greek">Greek Pizza</option>
+                        <option value="Neapolitan">Neopolitan Pizza</option>
+                    </select><br>
+                    <h5>SIZE</h5>
+              <select class="browser-default custom-select custom-select-md mb-3 size" name="">
+                  <option value="800">small  - Kshs. 800</option>
+                  <option value="1000">medium  - Kshs. 1000</option>
+                  <option value="1200">large  - Kshs. 1200</option>
+              </select><br>
+              <hr>
+              <h5>CRUST</h5>
+
+              <select class="browser-default custom-select custom-select-md mb-3 crust" name="">
+                  <option value="200">crispy - Kshs. 200</option>
+                  <option value="300">stuffed - Kshs. 300</option>
+                  <option value="400">gluttenFree - Kshs. 400</option>
+              </select><br>
+              <hr>
+              <h5>TOPPINGS</h5>
+              <select class="browser-default custom-select custom-select-md mb-3 topping" name="">
+                <option value="150">Mushroom - Kshs. 150</option>
+                <option value="150">Bacon - Kshs. 150</option>
+                <option value="150">Sausage - Kshs. 150</option>
+                <option value="150">Cheese - Kshs. 150</option>
+              </select><br>
+              <button  class="smt btn btn-secondary bg-secondary" name="button">SELECT</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="choice">
+          <h2>Your order is : </h2>
+
+          <div id="your-orders">
+            <table class="table table-md  pizzatable">
+              <thead>
+                <tr>
+                  <th scope="col">Order No.</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Size</th>
+                  <th scope="col">Crust</th>
+                  <th scope="col">Topping</th>
+                  <th scope="col">Total</th>
+                </tr>
+              </thead>
+              <tbody id="orders">
+                <tr>
+                  <td id="nOrder"></td>
+                  <td id="pname"></td>
+                  <td id="sPizza"></td>
+                  <td id="cPizza"></td>
+                  <td id="tPizza"></td>
+                  <td id="totals"></td>
+                </tr>
+              </tbody>
+            </table>
+            <p id="totalPizza"></p>
+            <p id="bTotal"></p>
+            <p id="addedprice">Delivery will cost sh. 200</p>
+            <p id="fMessage"></p>
+          </div>
+        </div>
+        <div class="butt">
+          <button name="button" class="btn btn-secondary bg-secondary  addPizza">Add Pizzaa</button>
+          <button type="button" name="button" class="btn btn-secondary bg-secondary  checkout">check Out</button>
+          <button type="button" name="button" class="btn btn-secondary deliver bg-secondary ">Delivery</button>
+        </div>
+            </div>
+            <div class="delivery">
+                <form action="" id="form">
+                  <div class="form-group">
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Name">
+                    <input type="number" id="phone" class="form-control mb-3" placeholder="Phone Number">
+                    <input type="text" id="location" class="form-control mb-3" placeholder="Location for delivery">
+                    <button class="btn btn-secondary bg-secondary " id="final-order">Confirm Order</button>
+                  </div>
+                </form>
+            </div>
+
+         </div>
+    </div>
+
+
+        <script src="JS/jquery-3.4.1.js"></script>
+        <script src="JS/swiper.min.js"></script>
+        <script src="JS/main.js"></script>
+    </body>
+</html>
