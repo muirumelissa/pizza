@@ -6,11 +6,6 @@ link to platform
 # Description
 on landing on the page it user comprehensive and can be navigated with out much hustle. all you need is a few click and your order is done. On the landing page you will be able to select your order by simply clicking on the images representing your desired order.
 
-Screenshots
-SCREENSHOT
-
-SCREENSHOT
-
 # Technologies used
 HTML
 CSS
